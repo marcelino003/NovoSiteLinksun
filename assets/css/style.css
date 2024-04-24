@@ -457,9 +457,9 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 52px;
+  font-size: 43px;
   font-weight: 700;
-  line-height: 64px;
+  line-height: 60px;
   color: #fff;
 }
 
@@ -1671,5 +1671,60 @@ section {
   color: #fff;
 }
 
+/* MODAL */
 
+#overlay {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+  height: 175px;
+  width: 700px;
+  /* Ajuste conforme necessário */
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
 
+#modal h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 575px) {
+  #modal h2 {
+      font-size: 18px;
+  }
+
+  #modal p {
+      font-size: 13px;
+  }
+
+  #overlay {
+      width: 370px;
+      height: 210px;
+  }
+}
+
+#modal p {
+  font-size: 15px;
+}
+
+#modal a {
+  color: #339FD7;
+  cursor: pointer;
+}
+
+#accept-btn {
+  background-color: #339FD7;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 100px;
+}
