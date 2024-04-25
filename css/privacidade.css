@@ -1,0 +1,296 @@
+
+
+
+.text-body-secondary {
+  font-size: 15px;
+}
+
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+html {
+  -ms-overflow-style: scrollbar;
+}
+
+.alltrans,
+.social-icons li a,
+.owl-nav > button,
+.owl-nav > button:after,
+.counter-box,
+.about-img:after,
+.gallery-img img,
+.form-control,
+.owl-dot,
+.subscribe-row,
+.close-btn,
+.close-btn:before,
+.close-btn:after,
+.tag-btn,
+.btn {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #fff;
+  outline: none;
+  text-decoration: underline;
+}
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+  a:active {
+    background-color: transparent;
+  }
+}
+p {
+  margin: 0 0 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin: 0 0 20px;
+  font-weight: 600;
+  text-transform:uppercase;
+}
+h1,
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+h6 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+#main {
+  padding: 0;
+  background: #fff;
+}
+.no-margin {
+  margin: 0 !important;
+}
+figure {
+  margin:0;
+}
+.opacity-no {
+  opacity: 1 !important;
+}
+
+
+/*==============================================
+02. HEADER CSS
+================================================*/
+#header {
+  padding:20px 0;
+  position: fixed;
+  background: #57C1E6;
+  left:0;
+  right:0;
+  top:0;
+  z-index:999;
+}
+.container-fluid {
+  padding:0 20px;
+}
+a#logo {
+  text-decoration: none;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.navbar {
+  padding: 0;
+}
+.navbar-toggle {
+  display:none;
+}
+.navbar-nav {
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.navbar-nav li {
+  margin-left: 30px;
+}
+
+.navbar-nav li a .active{
+  content:'';
+  display:block;
+  height: 2px;
+  /* background:#020101; */
+  background: linear-gradient(to right, yellow, orange);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform:scale(0);
+  transform:scale(0);
+  margin-top: 4px;
+}
+.navbar-nav li a {
+  color:#fff;
+  font-size: 15px;
+  text-decoration:none;
+  display:block;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.navbar-nav li a:after {
+  content:'';
+  display:block;
+  height: 2px;
+  /* background:#020101; */
+  background: linear-gradient(to right, yellow, orange);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform:scale(0);
+  transform:scale(0);
+  margin-top: 4px;
+}
+.navbar-nav li a:hover:after, .navbar-nav li.active a:after{
+  -webkit-transform:scale(1);
+  transform:scale(1);
+}
+.navbar-nav li a:hover {
+  opacity: 1;
+}
+.navbar-nav li.active a {
+  opacity: 1;
+}
+.collapse:not(.show) {
+  display:block;
+}
+
+.blue-text {
+  color: #727684;
+  font-weight: bold;
+}
+
+.subtopic {
+  padding-left: 50px;
+}
+
+.privacity-menu-title {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  /* color: #1F2746; */
+  text-align: left;
+  width: 100%;
+  border-bottom: 2px solid #1F2746;
+  margin-bottom: 10px;
+}
+
+.privacity-menu {
+  position: sticky;
+  top: 110px;
+  padding-left: 10px;
+  padding-right: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 30px 15px 30px 15px;
+  margin-bottom: 50px;
+}
+
+.privacity-font {
+  padding-bottom: 3px;
+}
+
+/* Hide privacity-menu on mobile screens */
+@media only screen and (max-width: 768px) {
+  .privacity-menu {
+      display: none;
+  }
+}
+
+.privacity-scrollto {
+  transition: color 0.3s, transform 0.3s;
+  /* Add transform to the transition */
+}
+
+.privacity-scrollto:hover {
+  color: #727684;
+  transform: scale(1.05);
+  /* Use transform for scaling */
+  font-weight: bold;
+}
+
+/* To reverse the scaling effect smoothly */
+.privacity-scrollto:not(:hover) {
+  transition: color 0.3s, transform 0.3s;
+  transform: scale(1);
+}
+
+.bold-title {
+  font-weight: bold;
+}
+
+.section-title-privacity {
+  padding-bottom: 15px;
+}
+
+.section-title-privacity h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title-privacity h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #57C1E6;
+  margin: 4px 10px;
+}
+
+.section-title-privacity p {
+  margin: 0;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  font-family: "Poppins", sans-serif;
+  color: #525252;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title-privacity p {
+      font-size: 26px;
+  }
+
+  .section-title-privacity h2 {
+      font-size: 10px;
+  }
+
+  .section-title-privacity h2::after {
+      display: none;
+  }
+}
